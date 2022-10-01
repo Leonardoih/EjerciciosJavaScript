@@ -1,0 +1,15 @@
+{
+  "name": "ejerciciosjavascript",
+  "version": "1.0.0",
+  "description": "ejercicios de Java Script 2022",
+  "main": "index.js",
+  "scripts": {
+    "start": "./ejercicio1.js",
+    "test": "start"
+  },
+  "author": "leponardo izqueirdo Henao",
+  "license": "ISC",
+  "dependencies": {
+    "node-modules": "^1.0.1"
+  }
+}
