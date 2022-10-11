@@ -1,11 +1,14 @@
-numbersArray = [];
-const agregar = () => {
+const numbersArray = [];
+function agregar() {
 	const getNumber = parseInt(document.getElementById('number').value);
-	if (getNumber != "") {
-		numbersArray.push(getNumber);
-	} else {
-		console.log('ingresa un valor valido');
-	}
 
+	numbersArray.push(getNumber);
 	console.log(numbersArray);
-};
+	console.log(numbersArray.length);
+
+	const sumarArray = numbersArray.reduce(
+		(acumulador, elemento) => acumulador + elemento,
+		0
+	);
+	console.log(sumarArray);
+}
