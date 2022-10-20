@@ -9,8 +9,9 @@ function validarFormulario(e) {
 		if (numA >= 1 && numB >= 1) {
 			if (numA > numB) {
 				for (let i = numB; i <= numA; i++) {
-					if (i % 2 == 0) {
+					if (i % 2 != 0) {
 						resp.textContent += `${i} `;
+						console.log(i);
 					}
 				}
 			}
