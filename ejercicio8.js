@@ -1,9 +1,12 @@
 function ejecutar() {
-	const numberB = parseInt(prompt('join a number'));
+	let numberB;
+	do {
+		numberB = parseInt(prompt('join a number'));
+	} while (isNaN(numberB));
 
 	if (numberB % 2 == 0) {
-		alert('the number is even');
+		alert(`the number ${numberB} is even`);
 	} else {
-		alert('the number is odd');
+		alert(`the number ${numberB} is odd`);
 	}
 }
